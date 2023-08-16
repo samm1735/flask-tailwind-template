@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if title and not title.isspace() %}
+    <title>FLASK & Tailwind - {{title}} </title>
+  {% else %}
+    <title>FLASK & Tailwind</title>
+  {% endif %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/tw_styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+
+
+  <div class="bg-blue-200 mx-auto py-10 text-center">
+    <h1 class="3xl">FLASK & Tailwind Template By ISAAC Sammuel Ramclief</h1>
+  </div>
+
+
+
+
+    <!-- Main Content Sections -->
+    <div class="mx-auto my-auto bg-teal-500 text-center">
+      <p class="xl">
+        Your content Should Go here.
+      </p>
+    {% block main_content %}
+
+    
+    
+    {% endblock %}
+    </div>
+
+
+    
+
+
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

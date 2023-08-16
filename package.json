@@ -1,0 +1,16 @@
+{
+  "name": "flask-tailwind-template",
+  "version": "1.0.0",
+  "description": "A Flask template using Tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-tw": "npx tailwindcss -i ./static/css/tailwind/styles.css -o ./static/css/tw_styles.css --watch"
+  },
+  "keywords": [],
+  "author": "ISAAC Sammuel Ramclief",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
